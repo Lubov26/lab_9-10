@@ -1,0 +1,94 @@
+<!-- сообщаем браузеру, как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+
+<!-- оболочка дока, язык содержимого -->
+<html lang="en">
+
+    <!-- заголовок страницы -->
+    <head>
+
+    <!-- кодировка -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- заголовок страницы в браузере -->
+        <title>lab_9-10</title>
+
+        <!-- подключение шрифтов -->
+
+
+        <!-- подключение CSS таблицы стилей -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- подключение скрипта -->
+        <script src="script.js"></script>
+
+    </head>
+
+    <!-- отображаемое тело страницы -->
+    <body>
+        <div id="message-form">
+            <div>
+            <h1>Contact Us</h1> 
+            <p>Your massege was sent, thank you!</p> 
+            </div>
+            
+            <form name="form" onsubmit="return validate()">
+            
+                <div class="flex">
+                    <!-- имя -->
+                    <div>
+                        <h2 class="label">FULL NAME</h2>
+
+                        <label for="name">
+                            <input type="text" id="name" name="name" value="" placeholder="Name" />
+
+                            <span id="form-name"></span>
+                        </label> 
+                    </div>
+                    
+                    <!-- почта -->
+                    <div>
+                        <h2 class="label">EMAIL ADDRESS</h2>
+
+                        <label for="email">
+                            <input type="text" id="email" name="email" value="" placeholder="Email" />
+
+                            <span id="form-email"></span>
+                        </label>  
+                    </div>
+                </div>
+                
+                <!-- предмет -->
+                <div>		        
+                    <h2 class="label">SUBJECT</h2>
+
+                    <label for="subject">
+                        <input type="text" id="subject" name="subject" value="" placeholder="Subject" />
+
+                        <span id="form-subject"></span>
+                    </label>
+                </div>
+
+                <!-- сообщение -->
+                <div>		    
+                    <h2 class="label">MESSAGE</h2>      
+
+                    <label for="message">
+                    
+                        <textarea id="message" name="message" placeholder="Message" ></textarea> 
+                        <span id="messagef"></span>
+                    </label>  
+                </div>
+
+                <!-- кнопка -->
+                <div>		           
+                    <button name="send" type="send" id="send" >SEND MESSAGE</button>
+                </div>
+
+                </form>
+            </div>
+
+    </body>
+
+</html>
